@@ -1,0 +1,125 @@
+/*Cart */
+
+.cart {
+	margin-bottom: 60px;
+}
+
+#cart__clean {
+	text-align: right;
+	padding: 12px 15px 0 0;
+}
+#cart__clean img {
+	margin-top: -3px;
+	margin-right: 4px;
+}
+
+.cart__box_item  {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.cart__box_item > div {
+	height: 11em;
+	padding-top: 3em;
+}
+.cart__box_item div:first-child {
+	padding-top: 0 !important;
+}
+
+.cart__box_header {
+	background: #cde4fc;
+	border-radius: 3px;
+	padding: 15px 15px;
+	font-weight: bold;
+	font-size: 15px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 1, 0.3);
+}
+.cart__box_item_title a {
+	font-weight: bold;
+	font-size: 15px;
+}
+.cart__article_number {
+	font-weight: bold;
+	
+}
+.cart__box_item_amount .to-cart_count_value {
+	box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 1, 0.18);
+}
+.cart__box_item_amount .to-cart__minus,
+.cart__box_item_amount .to-cart__plus {
+	background: linear-gradient(to bottom, #F5F5F5 0%,#E5E5E5 100%) !important;
+	color: #868686 !important;
+	line-height: 25px !important;
+	border-radius: 2px !important;
+	border: 1px solid #D3D3D3 !important;
+}
+.cart__box_item_cancel {
+	height: inherit;
+	background: url(../img/cancel-item.png) no-repeat center center;
+}
+.cart__bonus {
+	padding: 10px 0;
+	background: #f2f6fa;
+	border-radius: 3px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 1, 0.3);
+}
+.cart__total {
+	padding-top: 10px;
+}
+.cart__total_summ {
+	text-align: right;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.cart__order {
+		background: linear-gradient(to bottom, #1888C1 0%,#147CB8 100%);
+	border-radius: 3px;
+	padding: 8px;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 1, 0.34);
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+
+.cart__add {
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.cart__add article {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 20%;
+	padding: 32px 17px;
+	min-height: 260px;
+}
+
+.cart__add_item a {
+	font-weight: bold;
+	display: block;
+	min-height: 60px;
+}
+.cart__add_img-wrapper {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 160px;
+}
+.cart__add_img-wrapper img {
+	vertical-align: middle;
+}
+.cart__add_item .normal-price {
+	float: left;
+	
+}
+.cart__add_item input {
+	width: 20px;
+height: 20px;
+
+	float: right;
+	border: none;
+	background: url(../img/plus.png) no-repeat center center;
+}

@@ -1,11 +1,875 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Github Pages test</title>
+	<title>Главная | Экомедика | Интернет магазин-товаров для здоровья и красоты</title>
 	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/item.css">
+	<link rel="stylesheet" href="assets/styles/category.css">
+	<link rel="stylesheet" href="assets/styles/catalog.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script src="assets/js/ui.js"></script>
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?116"></script>
+
 </head>
 <body>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non animi optio, reprehenderit, ab recusandae quam deserunt nesciunt voluptate corporis tempore facere quisquam cum accusamus architecto vitae quibusdam, maxime quaerat mollitia itaque et ut tenetur consequuntur magni esse eius. Omnis quia, illo repellendus earum deleniti maxime asperiores quaerat tempora alias quos eveniet neque fugit voluptas, labore expedita reprehenderit quisquam minus optio aut. Sit vel consectetur eius doloribus sequi quidem magni velit exercitationem labore voluptatem! Magnam aspernatur pariatur eius minus magni iste reiciendis impedit et sit, cum hic beatae soluta eos necessitatibus consectetur totam delectus cupiditate obcaecati facilis assumenda. Quia voluptate, officia obcaecati aut unde! Consequuntur id itaque corrupti, at, provident natus nihil blanditiis nam molestias numquam officiis voluptatum. Distinctio minima deleniti, quibusdam necessitatibus voluptatum nulla odit earum adipisci ipsa ipsam nihil quae. Itaque laborum quaerat distinctio sit dignissimos, quibusdam amet, id optio fugit officia repudiandae harum praesentium aliquam voluptatibus est obcaecati nam rerum odit, iure suscipit repellendus illum numquam. Minima porro, similique fugiat! Iusto officia quam, quibusdam, minima harum perferendis! Deleniti ipsa cupiditate aspernatur sapiente, distinctio repellendus repellat accusantium, obcaecati veniam sit exercitationem hic provident ipsam eos vel placeat corporis fuga porro ut totam dolorem aut quisquam debitis. Numquam, id, fugit!</p>
+	<header class="header__map">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" class="col-md-12 header__map_address"><img src="assets/img/icon-location.png" height="16" width="16" alt="">Димитрова проспект, 6</a>
+					<div class="header__map_phone">
+						<span class="col-md-2 col-md-offset-1">Teл:</span><span class="col-md-9 header__map_phone1">(383) 209 - 04 - 97</span>
+						<span class="col-md-9 col-md-offset-3 header__map_phone2">(383) 209 - 04 - 97</span>
+					</div>
+					<div class="header__map_worktime">
+						<span class="col-md-4 col-md-offset-1 header__top_work-days">Пн - Сб</span><span class="col-md-5">9:30 - 19:00</span>
+						<span class="col-md-4 col-md-offset-1 header__top_work-days-weekend">Вс</span><span class="col-md-5">9:30 - 19:00</span>
+					</div>
+					<div class="col-md-12 horizont-line"></div>
+					<!-- Row -->
+					<a href="#" class="col-md-12 header__map_address"><img src="assets/img/icon-location.png" height="16" width="16" alt="">Димитрова проспект, 6</a>
+					<div class="header__map_phone">
+						<span class="col-md-2 col-md-offset-1">Teл:</span><span class="col-md-9 header__map_phone1">(383) 209 - 04 - 97</span>
+						<span class="col-md-9 col-md-offset-3 header__map_phone2">(383) 209 - 04 - 97</span>
+					</div>
+					<div class="header__map_worktime">
+						<span class="col-md-4 col-md-offset-1 header__top_work-days">Пн - Сб</span><span class="col-md-5">9:30 - 19:00</span>
+						<span class="col-md-4 col-md-offset-1 header__top_work-days-weekend">Вс</span><span class="col-md-5">9:30 - 19:00</span>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18305.53547216252!2d82.92920029632673!3d55.00480052684599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5e190cc4d97%3A0x9b3a0673e1d3e985!2z0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1421927571213" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="header-top">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-12">
+					<ul>
+						<li id="login__form" class="col-md-3 center header-top__pr"><a href="#"><img src="assets/img/pr.png" height="13" width="10" alt="">Личный кабинет</a></li>
+						<li class="col-md-3 center header-top__call-me"><a href="#"><img src="assets/img/callme.png" height="9" width="12" alt="">Заказать звонок</a></li>
+						<li class="col-md-3 center header-top__shops"><a href="#"><img src="assets/img/shops.png" alt="">Адреса магазинов</a></li>
+						<li class="col-md-3 center"><a href="#" class="header-top__favourite_link"><img src="assets/img/favourite.png" alt="" >Избранное</a><a href="" class="header-top__favourite_count">1 товар</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<header class="header">
+		<div class="container">
+			<div class="row mr-t mr-b">
+				<div class="col-md-3 col-sm-3 header__logo">
+					<a href="index.html">
+						<img src="assets/img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-md-2 col-sm-2 col-md-offset-1 header__freecall">
+					<span>Бесплатный звонок:</span>
+					<span>8 800 200 00 80</span>
+				</div>
+				<div class="col-md-2 col-sm-2 col-md-offset-1 header__city-number">
+					<span>Телефон в Новосибирске:</span>
+					<span>8 (383) 343 58 85</span>
+				</div>
+				<div class="col-md-3 col-sm-3 header__cart">
+					<img src="assets/img/cart.png" height="38" width="47" alt="" class="relative">
+					<span class="cart__count">3</span>
+					<span><a href="">Корзина покупок</a></span>
+					<span class="cart__total">На сумму 15 000 &#8381;</span>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row mr-t mr-b relative">
+				<div class="col-md-3 header__city rp-off center">
+					<span>Ваш город:&nbsp</span>
+					<a id="city__select">Новосибирск&nbsp&nbsp<img src="assets/img/city-dropdown.png" height="6" width="9" alt=""></a>
+				</div>
+				<div class="header__city_select" id="header__city_select">
+					<span class="city__select">выберите свой город</span><span class="city__select_close" id="city__select_close"></span>
+					<div class="clearfix"></div>
+					<span><a href="">Астрахань</a></span>
+					<span><a href="">Барнаул</a></span>
+					<span><a href="">Волгоград</a></span>
+					<span><a href="">Воронеж</a></span>
+					<span><a href="">Екатеринбург</a></span>
+					<span><a href="">Казань</a></span>
+					<span><a href="">Кемерово</a></span>
+					<span><a href="">Краснодар</a></span>
+					<span><a href="">Новокузнецк</a></span>
+					<span><a href="" class="city__select_current">Новосибирск</a></span>
+					<span><a href="">Омск</a></span>
+					<span><a href="">Оренбург</a></span>
+					<span><a href="">Самара</a></span>
+					<span><a href="">Саратов</a></span>
+					<span><a href="">Тольятти</a></span>
+					<span><a href="">Томск</a></span>
+					<span><a href="">Тюмень</a></span>
+					<span><a href="">Уфа</a></span>
+					<span><a href="">Челябинск</a></span>
+					<span><a href="">Город</a></span>
+				</div>
+				<div class="col-md-5 col-md-offset-1 header__search">
+					<input type="text" placeholder="Поиск в каталоге товаров">
+				</div>
+				<div class="col-md-3 header__offers_main">
+					<a href="">специальные предложения</a>
+				</div>
+			</div>
+		</div>
+		<div class="container d-p">
+			<div class="row mr-t mr-b">
+				<nav class="header__nav col-md-12">
+					<ul>
+						<li class="col-md-2 col-sm-2"><a href="">Помощь покупателю</a></li>
+						<li class="col-md-2 col-sm-2"><a href="">Гарантия качества</a></li>
+						<li class="col-md-2 col-sm-2"><a href="">Оплата и доставка</a></li>
+						<li class="col-md-2 col-sm-2"><a href="">Дисконтная программа</a></li>
+						<li class="col-md-2 col-sm-2 center"><a href="">О магазине</a></li>
+						<li class="col-md-2 col-sm-2"><a href="">Наши контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row header__advantages mr-t mr-b">
+				<div class="col-md-3">
+					<img src="assets/img/wallet.jpg" height="54" width="54" alt="">
+					<span class="advantages__header">низкие цены</span>
+					<span>Прямые поставки позволяют нам удерживать цены</span>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/star.jpg" height="54" width="54" alt="">
+					<span class="advantages__header">высокое качество</span>
+					<span>Вся продукция проходит проверку</span>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/plane.jpg" height="54" width="54" alt="">
+					<span class="advantages__header">быстрая доставка</span>
+					<span>Мы доставляем товары в самые кратчайшие сроки</span>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-3">
+					<img src="assets/img/sale.jpg" height="54" width="54" alt="">
+					<span class="advantages__header">скидки и акции</span>
+					<span>Наши клиенты всегда могут рассчитывать на скидку</span>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Categories -->
+	<script>
+		$(document).ready(function(){
+			$(".category__list_header").click(function(){
+				$(".category__list_inner").fadeOut(0);
+				$(".category__list_header").css("list-style-image", "url(assets/img/category-li-img.png)");
+				$(this).find("ul").fadeToggle(0);
+				$(this).css("list-style-image", "url(assets/img/category-li-img-minus.png)");
+			});
+			$(".category__list_header > a").click(function(event){
+				event.stopImmediatePropagation();
+			});
+		});
+	</script>
+	<section class="category container d-p">
+		<div class="row">
+			<nav class="col-md-3 category__list lp-off mr-b" >
+			<ul class="col-md-12">
+				<li class="category__list_header"><a href="item.html">list category link</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+				<li class="category__list_header"><a href="#">list category</a>
+					<ul class="category__list_inner">
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+						<li><span class="category__goods_count"><a href="">inner list item</a>&nbsp;111</span></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- VK Widget -->
+				<div id="vk_groups"></div>
+				<script type="text/javascript">
+				VK.Widgets.Group("vk_groups", {mode: 0, width: "221", height: "270", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 72034280);
+				</script>
+			</nav>
+			<div class="col-md-9 category__preview p-off">
+				<img src="assets/img/banner.jpg" class="category__preview_banner" alt="">
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">медицинская техника для дома</a>
+						<a href="#" class="category__preview_inner-link">тонометры</a><a href="#" class="category__preview_inner-link">термометры и гигрометры</a><a href="#" class="category__preview_inner-link">алкотестеры</a><a href="#" class="category__preview_inner-link">дыхательные тренажеры</a><a href="#" class="category__preview_inner-link">стетоскопы</a><a href="#" class="category__preview_inner-link">отпугиватель собак</a><a href="#" class="category__preview_inner-link">шагомеры</a><a href="#" class="category__preview_inner-link">глюкометры и пульсоксиметры </a><a href="#" class="category__preview_inner-link">ингаляторы</a><a href="#" class="category__preview_inner-link">кислородное оборудование</a><a href="#" class="category__preview_inner-link">рн-метры</a>
+					</div>
+					<a class="category__preview_link">медицинская техника для дома</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">реабилитация и средства по уходу за больными</a>
+						<a href="#" class="category__preview_inner-link">трости</a><a href="#" class="category__preview_inner-link">ходунки</a><a href="#" class="category__preview_inner-link">инвалидные коляски</a><a href="#" class="category__preview_inner-link">костыли</a><a href="#" class="category__preview_inner-link">кровати, противопролежневые матрасы и подушки</a><a href="#" class="category__preview_inner-link">санитарные приспособления</a>
+					</div>
+					<a class="category__preview_link">реабилитация и средства по уходу за больными</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">диагностические и измерительные приборы для мед-ских кабинетов</a>
+						<a href="#" class="category__preview_inner-link">секундомеры</a><a href="#" class="category__preview_inner-link">общая медицина</a><a href="#" class="category__preview_inner-link">спирометры</a><a href="#" class="category__preview_inner-link">динамометры</a>
+					</div>
+					<a class="category__preview_link">диагностические и измерительные приборы для мед-ских кабинетов</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">облучатели, рециркуляторы и бактерицидные лампы</a>
+						<a href="#" class="category__preview_inner-link">кварцевые лампы</a><a href="#" class="category__preview_inner-link">лампы вуда</a><a href="#" class="category__preview_inner-link">бактерицидные облучатели и рециркуляторы</a><a href="#" class="category__preview_inner-link">рефлектор минина, синяя лампа</a>
+					</div>
+					<a class="category__preview_link">облучатели, рециркуляторы и бактерицидные лампы</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">ортопедические товары</a>
+						<a href="#" class="category__preview_inner-link">корректоры осанки</a><a href="#" class="category__preview_inner-link">бандажи</a><a href="#" class="category__preview_inner-link">фиксаторы суставов</a><a href="#" class="category__preview_inner-link">пояса</a><a href="#" class="category__preview_inner-link">фиксаторы спины</a><a href="#" class="category__preview_inner-link">стельки и приспособления для стопы</a><a href="#" class="category__preview_inner-link">продукция для похудения</a>                </div>
+					<a class="category__preview_link">ортопедические товары</a>
+				</figure>
+			 <figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">товары для малышей</a>
+						<a href="#" class="category__preview_inner-link">подгузники</a><a href="#" class="category__preview_inner-link">салфетки</a><a href="#" class="category__preview_inner-link">подгузники-трусики</a>
+					</div>
+					<a class="category__preview_link">товары для малышей</a>
+				</figure>
+			 <figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">Товары для красоты</a>
+						<a href="#" class="category__preview_inner-link">Дарсонвали</a>
+					</div>
+					<a class="category__preview_link">Товары для красоты</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">физиотерапия для дома</a>
+						<a href="#" class="category__preview_inner-link">гальванизация, электрофорез</a><a href="#" class="category__preview_inner-link">лазерная терапия</a><a href="#" class="category__preview_inner-link">дарсонваль</a><a href="#" class="category__preview_inner-link">магнитотерапия</a><a href="#" class="category__preview_inner-link">часы процедурные и песочные</a><a href="#" class="category__preview_inner-link">витафоны</a>
+					</div>
+					<a class="category__preview_link">физиотерапия для дома</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">водоподготовка и воздухоочистка</a>
+						<a href="#" class="category__preview_inner-link">активаторы воды</a><a href="#" class="category__preview_inner-link">антиаллергические средства</a><a href="#" class="category__preview_inner-link">дистилляторы</a><a href="#" class="category__preview_inner-link">мойки воздуха</a><a href="#" class="category__preview_inner-link">водонагреватели</a><a href="#" class="category__preview_inner-link">фильтры </a><a href="#" class="category__preview_inner-link">ионизаторы</a><a href="#" class="category__preview_inner-link">солевые лампы</a><a href="#" class="category__preview_inner-link">увлажнители</a>
+					</div>
+					<a class="category__preview_link">водоподготовка и воздухоочистка</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">гигиена полости рта</a>
+						<a href="#" class="category__preview_inner-link">зубные щетки, насадки</a><a href="#" class="category__preview_inner-link">ирригаторы, насадки</a><a href="#" class="category__preview_inner-link">зубные пасты</a>
+					</div>
+					<a class="category__preview_link">гигиена полости рта</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">аппараты для красоты и здоровья</a>
+						<a href="#" class="category__preview_inner-link">прессотерапия и лимфодренаж</a><a href="#" class="category__preview_inner-link">массажеры</a><a href="#" class="category__preview_inner-link">gezatone для лица</a><a href="#" class="category__preview_inner-link">косметические средства</a><a href="#" class="category__preview_inner-link">gezatone для тела</a><a href="#" class="category__preview_inner-link">восковая эпиляция</a>
+					</div>
+					<a class="category__preview_link">аппараты для красоты и здоровья</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">весы и анализаторы массы тела</a>
+						<a href="#" class="category__preview_inner-link">весы и анализаторы состава тела</a>
+					</div>
+					<a class="category__preview_link">весы и анализаторы массы тела</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">экологический контроль</a>
+						<a href="#" class="category__preview_inner-link">индикаторы электромагнитных полей </a><a href="#" class="category__preview_inner-link">дозиметры</a><a href="#" class="category__preview_inner-link">нитрат-тестеры</a><a href="#" class="category__preview_inner-link">индикаторы радона</a><a href="#" class="category__preview_inner-link">приборы для измерения параметров окружающей среды </a>
+					</div>
+					<a class="category__preview_link">экологический контроль</a>
+				</figure>
+				<figure class="col-md-3">
+					<img src="" class="relative" alt="">
+					<div class="category__preview_collapse-box">
+						<span class="category__preview_collapse-box_close"></span>
+						<img src="" alt="">
+						<a class="category__preview__box_link">микроскопы</a>
+						<a href="#" class="category__preview_inner-link">микромед, лабораторные</a><a href="#" class="category__preview_inner-link">стереоптические</a><a href="#" class="category__preview_inner-link">учебные</a><a href="#" class="category__preview_inner-link">биомед, лабораторные</a><a href="#" class="category__preview_inner-link">микмед, лабораторные</a><a href="#" class="category__preview_inner-link">принадлежности к микроскопам </a>
+					</div>
+					<a class="category__preview_link">микроскопы</a>
+				</figure>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- Special offers -->
+	<section class="sp-offers container">
+		<div class="row">
+			<div class="container">
+				<h2 class="sp-offers__header center">специальные предложения</h2>
+			</div>
+			<div class="container">
+				<div class="sp-offers__paginator col-md-2 center-block center mr-b">
+					<a id="page1"class="sp-offers__paginator_page-active sp-offers__paginator_page1"></a>
+					<a id="page2"class="sp-offers__paginator_page2"></a>
+					<a id="page3"class="sp-offers__paginator_page3"></a>
+					<a id="page4"class="sp-offers__paginator_page4"></a>
+				</div>
+			</div>
+			<div class="sp-offers__page1 col-md-12 mr-b">
+				<div class="sp-offers__offer col-md-3 ">
+					<span class="label-new"></span>
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer1-img.jpg" alt="">
+					</div>
+					<a href="item.html">Тонометр B.Well WA-33</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer col-md-3 ">
+					<span class="label-new"></span>
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer2-img.jpg" alt="">
+					</div>
+					<a href="">Алкотестер Динго Е010</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer col-md-3 ">
+					<span class="label-new"></span>
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer3-img.jpg" alt="">
+					</div>
+					<a href="">Комплекс ревитализации «ЛАЗМИК ® - Стандарт»</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer col-md-3 ">
+					<span class="label-sale"></span>
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer4-img.jpg" alt="">
+					</div>
+					<a href="">Стетоскоп Riester Anestophon</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+			</div>
+			<div class="sp-offers__page2 col-md-12 mr-b">
+				<!-- Use sp-offers__new or sp-offers__sale classes to add label -->
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer3-img.jpg" alt="">
+					</div>
+					<a href="">Комплекс ревитализации «ЛАЗМИК ® - Стандарт»</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer1-img.jpg" alt="">
+					</div>
+					<a href="">Тонометр B.Well WA-33</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer2-img.jpg" alt="">
+					</div>
+					<a href="">Алкотестер Динго Е010</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__sale col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer4-img.jpg" alt="">
+					</div>
+					<a href="">Стетоскоп Riester Anestophon</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+			</div>
+			<div class="sp-offers__page3 col-md-12 mr-b">
+				<!-- Use sp-offers__new or sp-offers__sale classes to add label -->
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer2-img.jpg" alt="">
+					</div>
+					<a href="">Алкотестер Динго Е010</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer1-img.jpg" alt="">
+					</div>
+					<a href="">Тонометр B.Well WA-33</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer3-img.jpg" alt="">
+					</div>
+					<a href="">Комплекс ревитализации «ЛАЗМИК ® - Стандарт»</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__sale col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer4-img.jpg" alt="">
+					</div>
+					<a href="">Стетоскоп Riester Anestophon</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+			</div>
+			<div class="sp-offers__page4 col-md-12 mr-b">
+				<!-- Use sp-offers__new or sp-offers__sale classes to add label -->
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer1-img.jpg" alt="">
+					</div>
+					<a href="">Тонометр B.Well WA-33</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer2-img.jpg" alt="">
+					</div>
+					<a href="">Алкотестер Динго Е010</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__sale col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer4-img.jpg" alt="">
+					</div>
+					<a href="">Стетоскоп Riester Anestophon</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+				<div class="sp-offers__offer sp-offers__new col-md-3 ">
+					<div class="sp-offers__offer_img-wrapper">
+						<img src="assets/img/offer3-img.jpg" alt="">
+					</div>
+					<a href="">Комплекс ревитализации «ЛАЗМИК ® - Стандарт»</a>
+					<span class="old-price">15 000 &#8381;</span>
+					<span class="new-price">10 000 &#8381;</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="comments container mr-b">
+		<div class="row">
+			<div class="container mr-b">
+				<h2 class="comments__header center">отзывы наших клиентов</h2>
+			</div>
+			<div class="container mr-b">
+				<div class="col-md-3 comments__show-more center-block center">
+					<a class="comments__show-more_link"><img src="assets/img/show-more-comments.png" alt="">Показать ещё</a>
+				</div>
+			</div>
+			<div class="col-md-12 comments__page1">
+				<div class="col-md-6 comments__comment">
+					<img src="assets/img/comment-img1.jpg" alt="">
+					<span class="comments__comment_author mr-b">Lorem Ipsum</span>
+					<span class="comments__comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi labore nobis quam veritatis, alias repellendus numquam iusto perferendis aperiam, nesciunt consequuntur doloribus culpa voluptates impedit quis possimus facilis? Nostrum, quia.
+					<a href="" class="comments__comment_read-more">Прочитать полностью</a>
+					</span>
+					
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-6 comments__comment">
+					<img src="assets/img/comment-img2.jpg" alt="">
+					<span class="comments__comment_author mr-b">Lorem Ipsum</span>
+					<span class="comments__comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic omnis recusandae enim doloremque optio debitis totam ad deleniti praesentium a, adipisci nostrum facere qui modi repudiandae nam sed nulla natus?
+					<a href="" class="comments__comment_read-more">Прочитать полностью</a>
+					</span>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="col-md-12 comments__page2">
+				<div class="col-md-6 comments__comment">
+					<img src="assets/img/comment-img3.jpg" alt="">
+					<span class="comments__comment_author mr-b">Lorem Ipsum 2</span>
+					<span class="comments__comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis pariatur eveniet dolorem amet voluptate consequuntur commodi? Quibusdam earum sint, obcaecati suscipit eligendi eum, est beatae omnis unde praesentium molestiae!
+					<a href="" class="comments__comment_read-more">Прочитать полностью</a>
+					</span>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-6 comments__comment">
+					<img src="assets/img/comment-img4.jpg" alt="">
+					<span class="comments__comment_author mr-b">Lorem Ipsum 2</span>
+					<span class="comments__comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id beatae deserunt dicta suscipit hic. Placeat nulla, eos ex dolores. Accusantium minus architecto voluptate praesentium perferendis velit, mollitia doloribus rem sed.
+					<a href="" class="comments__comment_read-more">Прочитать полностью</a>
+					</span>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="opt container">
+		<div class="row">
+			<div class="container">
+				<a href=""><img src="assets/img/banner2.jpg" height="229" width="940" alt=""></a>
+			</div>
+		</div>
+	</section>
+	<section class="about container">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-7 about-shop lp-off">
+					<h2 class="mr-b">Интернет-магазин «Экомедика»</h2>
+					<p class="mr-b">Компания «Экомедика» была основана в 2001 году. Миссия компании — помощь людям в физической реабилитации и социальной адаптации. Мы предлагаем комплекс решений для сохранения, укрепления и восстановления здоровья. Постоянно расширяющийся перечень оказываемых услуг формируется с учетом потребностей различных категорий покупателей и позволяет нам подходить индивидуально к каждому.</p>
+					<p class="mr-b">Розничная сеть «Экомедика» насчитывает 38 салонов-магазинов в Москве, Московской области, Санкт-Петербурге, Астрахани, Волгограде, Екатеринбурге, Нижнем Тагиле, Набережных Челнах, Перми, Пскове, Самаре, Стерлитамаке, Тюмени, Чебоксарах, Ярославле и более тридцати торговых представительств в регионах России. Компания активно развивается: регулярно открываются новые магазины, расширяется ассортимент и перечень услуг. Консультанты, работающие в салонах «Экомедика», имеют медицинское образование и постоянно совершенствуют свои знания в соответствующих областях.</p>
+				</div>
+				<div class="col-md-3 col-md-offset-1 about__news p-off">
+					<h2>Новости магазина</h2>
+					<article>
+						<span class="about__news_date">15 ноября</span>
+						<a href="" class="about__news_link">
+						В поликлинике на ул. Курчатова прошла выставка-ярмарка магазина «Экомедика»</a>
+					</article>
+					<article>
+						<span class="about__news_date">15 ноября</span>
+						<a href="" class="about__news_link">«Экомедика» провела выставку-ярмарку в Поликлинике на ул. Тамбовской
+						</a>
+					</article>
+					<article>
+						<span class="about__news_date">15 ноября</span>
+						<a href="" class="about__news_link">«Экомедика» стала ближе к покупателю! Мы разработали график выставок-ярмарок в поликлиниках Калининского района
+						</a>
+					</article>
+					<a href="news.html">все новости</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row mr-t mr-b">
+				<div class="container">
+					<div class="footer__nav col-md-12 mr-b">
+						<ul>
+							<li class="col-md-2 col-sm-2"><a href="">Помощь покупателю</a></li>
+							<li class="col-md-2 col-sm-2"><a href="">Гарантия качества</a></li>
+							<li class="col-md-2 col-sm-2"><a href="">Оплата и доставка</a></li>
+							<li class="col-md-2 col-sm-2"><a href="">Дисконтная программа</a></li>
+							<li class="col-md-2 col-sm-2 center"><a href="">О магазине</a></li>
+							<li class="col-md-2 col-sm-2"><a href="">Наши контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<span class="footer__copyright">&copy; 2013-2014  Экомедика - Магазин товаров для красоты и здоровья</span>
+				</div>
+				<div class="col-md-3 col-md-offset-1 col-sm-2 footer__telephone">
+					<span>Бесплатный звонок:</span>
+					<span class="mr-b">8 800 200 00 80</span>
+					<span>Телефон в Новосибирске:</span>
+					<span>8 (383) 343 58 85</span>
+				</div>
+				<div class="col-md-5 footer__payment">
+					<span>Все цены указаны в рублях РФ</span>
+					<span class="mr-b">Цены в розничных магазинах могут отличаться от указанных на сайте</span>
+					<span class="mr-b">Принимаем к оплате</span>
+					<img src="assets/img/payment-method.png" height="25" width="380" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		// $(document).ready(function(){
+		// 	var darkBlue = "#1888c1";
+		// 	var lightBlue = "#56acd8";
+		// 	$(".toolbar__watched").click(function(event){
+		// 		event.preventDefault();
+		// 		$(".toolbar__collapse").fadeToggle(0);
+		// 		$(this).css("background", lightBlue);
+		// 		$(".toolbar__favourite").css("background", darkBlue);
+		// 		$(".toolbar__cart").css("background", darkBlue);
+		// 	});
+		// 	$(".toolbar__favourite").click(function(event){
+		// 		event.preventDefault();
+		// 		$(".toolbar__collapse").fadeToggle(0);
+		// 		$(this).css("background", lightBlue);
+		// 		$(".toolbar__watched").css("background", darkBlue);
+		// 		$(".toolbar__cart").css("background", darkBlue);
+		// 	});
+		// 	$(".toolbar__cart").click(function(event){
+		// 		event.preventDefault();
+		// 		$(".toolbar__collapse").fadeToggle(0);
+		// 		$(this).css("background", lightBlue);
+		// 		$(".toolbar__favourite").css("background", darkBlue);
+		// 		$(".toolbar__watched").css("background", darkBlue);
+		// 	});
+		// });
+
+		$(document).ready(function(){
+			var darkBlue = "#1888c1";
+			var lightBlue = "#56acd8";
+			$('.toolbar nav a').click(function(){
+				if($(this).attr("data-active") === '1'){
+				$('.toolbar nav a').css("background", darkBlue);
+				$(".toolbar__collapse").css('display','none');
+				$(this).attr("data-active",'0')
+				return false;
+				}
+			$('.toolbar nav a').css("background", darkBlue);
+			$('.toolbar nav a').attr("data-active",'0');
+			$(this).attr("data-active",'1');
+			$(this).css("background", lightBlue);
+			$(".toolbar__collapse").css('display','none');
+			$('.toolbar__collapse[data-id="'+($(this).attr('class'))+'"]').css('display','block');
+				return false;
+			});}); 
+	</script>
+	<div class="toolbar">
+		<nav class="toolbar__nav">
+			<a class="toolbar__watched"><img src="assets/img/watched.png" height="12" width="16" alt="">Просмотренные</a>
+			<a class="toolbar__favourite"><img src="assets/img/favourite.png" height="14" width="16" alt="">Избранное</a>
+			<a class="toolbar__cart"><img src="assets/img/cart-toolbar.png" height="13" width="16" alt="">Корзина</a>
+			<a href="#top" class="toolbar__top"><img src="assets/img/up-arrow.png" height="15" width="13" alt=""></a>
+		</nav>
+		<div class="toolbar__collapse" data-id="toolbar__watched">
+			<div class="toolbar__collapse_inner">a1</div>
+		</div>
+		<div class="toolbar__collapse" data-id="toolbar__favourite">
+			<div class="toolbar__collapse_inner">a2</div>
+		</div>
+		<div class="toolbar__collapse" data-id="toolbar__cart">
+			<div class="toolbar__collapse_inner">a3</div>
+		</div>
+	</div>
+	<div class="modal__feedback modal-window relative">
+		<span id="modal__close"></span>
+		<ul class="modal__tabs">
+			<li id="modal-tab-first" class="modal__tabs_tab_active"><span>Обратный звонок</span></li>
+			<li id="modal-tab-second" class="modal__tabs_tab"><span>Написать письмо</span></li>
+			<div class="clearfix"></div>
+		</ul>
+		<div class="modal__content modal__feedback_content_call">
+			<label for="modal__feedback_name" class="col-md-3 lp-off">Ваше имя</label>
+			<input type="text" id="modal__feedback_name" class="col-md-7 col-md-offset-2">
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__feedback_phone" class="col-md-4 lp-off">Ваш телефон</label>
+			<input type="text" id="modal__feedback_phone" class="col-md-7 col-md-offset-1">
+			<div class="col-md-12 mr-b"></div>
+			<label for="comment__feedback" class="col-md-12 lp-off">Комментарий</label>
+			<textarea name="comment__feedback col-md-12 " id="comment__feedback" cols="56" rows="7" ></textarea>
+			<div class="col-md-12 mr-b"></div>
+			<div class="col-md-12 center"><a href="#" class="feedback__callme-button">заказать звонок</a></div>
+		</div>
+		<div class="modal__content modal__feedback_content_write">
+			<label for="select__problem" class="col-md-4 lp-off">Тема вопроса</label>
+			<select name="" id="select__problem" class="col-md-7 col-md-offset-1">
+				<option value="">Value</option>
+				<option value="">Value</option>
+				<option value="">Value</option>
+				<option value="">Value</option>
+				<option value="">Value</option>
+			</select>
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__feedback_name" class="col-md-3 lp-off">Ваше имя</label>
+			<input type="text" id="modal__feedback_name" class="col-md-7 col-md-offset-2">
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__feedback_phone" class="col-md-5 lp-off">E-mail для ответа</label>
+			<input type="text" id="modal__feedback_phone" class="col-md-7">
+			<div class="col-md-12 mr-b"></div>
+			<label for="comment__feedback" class="col-md-12 lp-off">Комментарий</label>
+			<textarea name="comment__feedback col-md-12 " id="comment__feedback" cols="56" rows="7" ></textarea>
+			<div class="col-md-12 mr-b"></div>
+			<div class="col-md-12 center"><a href="#" class="feedback__callme-button">Отправить сообщение</a></div>
+		</div>
+	</div>
+	<div class="modal__login modal-window relative">
+		<span id="modal__close_login"></span>
+		<ul class="modal__tabs">
+			<li id="modal-tab_login-first" class="modal__tabs_tab_active"><span>Вход</span></li>
+			<li id="modal-tab_login-second" class="modal__tabs_tab"><span>Регистрация</span></li>
+			<div class="clearfix"></div>
+		</ul>
+		<div class="modal__content modal__login_content_login">
+			<label for="modal__login_email" class="col-md-3 lp-off">Email</label>
+			<input type="text" id="modal__login_email" class="col-md-8 col-md-offset-1">
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__login_password" class="col-md-4 lp-off">Пароль</label>
+			<input type="text" id="modal__login_password" class="col-md-8">
+			<div class="col-md-12 mr-b"></div>
+			<input type="checkbox" id="not__remember">
+			<label for="not__remember" class="col-md-8 col-md-offset-4 p-off not__remember">
+				<span></span>Не запоминать меня
+				<div class="clearfix"></div>
+			</label>
+			<div class="col-md-6 col-md-offset-3 center">
+				<a href="#" class="login__login-button">войти</a>
+			</div>
+			<div class="col-md-9 col-md-offset-3 p-off">
+				<a href="#" class="login__login-button__reset col-md-12">Восстановить пароль</a>
+			</div>
+		</div>
+		<div class="modal__content modal__login_content_sign-up">
+			<label for="modal__sign-up_email" class="col-md-3 lp-off">Email <span class="must-be-filled">*</span></label>
+			<input type="text" id="modal__sign-up_email" class="col-md-8 col-md-offset-1">
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__sign-up_password" class="col-md-4 lp-off">Пароль <span class="must-be-filled">*</span></label>
+			<input type="text" id="modal__sign-up_password" class="col-md-8">
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__sign-up_name" class="col-md-4 lp-off">Ваше имя</label>
+			<input type="text" id="modal__sign-up_name" class="col-md-8">
+			<div class="col-md-12 mr-b"></div>
+			<label for="modal__sign-up_phone" class="col-md-4 lp-off">Телефон</label>
+			<input type="text" id="modal__sign-up_phone" class="col-md-8">
+			<div class="col-md-12 mr-b"></div>
+			<div class="col-md-9 col-md-offset-3 center">
+				<a href="#" class="login__sign-up-button">зарегистрироваться</a>
+			</div>
+			<div class="col-md-9 col-md-offset-3">
+				<span class="must-be-filled_span">Поля помеченные звёздочкой — <span class="must-be-filled">*</span>обязательны для заполнения</span>
+			</div>
+			
+		</div>
+	</div>
 </body>
 </html>

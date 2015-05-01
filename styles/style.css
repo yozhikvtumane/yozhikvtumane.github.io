@@ -26,7 +26,7 @@ body {
 	font-family: Roboto, sans-serif;
 	font-size: 100%;
 	color: #262f32;
-	/*width: 100%;*/
+	width: 100%;
 }
 
 h2 {
@@ -83,7 +83,6 @@ input:focus {
 	color: #262f32;
 	border: 1px solid #262f32;
 }
-
 .button-black:hover {
 	background: #262f32;
 	color: #fff;
@@ -114,13 +113,12 @@ input:focus {
 .header__photo {
 	display: table-cell;
 	width: 66.39824304538799%;
-	background: url(../img/top-bg.jpg)no-repeat center center;
+	background: url(http://i.imgur.com/VKlpx3R.jpg)no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
 .header__photo_invisible {
 	display: none;
 }
@@ -150,14 +148,14 @@ input[type="button"] {
 	border: none;
 	font-size: 2.5em;
 	color: rgba(0, 0, 0, 0);
-	background: url(../img/menu.png) no-repeat center center;
+	background: url(http://i.imgur.com/xb6N4IB.png) no-repeat center center;
 }
 
 .header__menu {
 	display: none;
 	width: 66.39824304538799%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/top-menu-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/llX0kOW.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -167,7 +165,6 @@ input[type="button"] {
 	-o-transition: 0.3s;
 	transition: 0.3s;
 }
-
 .header__menu_visible {
 	display: table-cell;
 }
@@ -176,7 +173,6 @@ input[type="button"] {
 	list-style: none;
 	margin: 0;
 }
-
 .header__menu ul li {
 	margin: 0;
 	padding: 0;
@@ -187,7 +183,6 @@ input[type="button"] {
 	text-decoration: none;
 	font-size: 2.5em;
 }
-
 .header__menu a:hover {
 	color: #fff;
 	text-decoration: underline;
@@ -205,7 +200,7 @@ input[type="button"] {
 	color: #fff;
 	width: 44.94875549048316%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/middle-left-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/cBZs6DI.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -229,7 +224,7 @@ input[type="button"] {
 
 .middle__top-right {
 	color: #262f32;
-	background: url(../img/middle-right-top-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/HSuw5pI.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -238,13 +233,12 @@ input[type="button"] {
 
 .middle__bottom-right {
 	color: #fff;
-	background: url(../img/middle-right-bottom-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/Avw6HAL.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
 .middle__bottom-right p {
 	color: #c4c6c8;
 }
@@ -260,7 +254,7 @@ input[type="button"] {
 	display: table-cell;
 	width: 33.5285505124451%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/footer-left-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/2fpCXBQ.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -279,7 +273,7 @@ input[type="button"] {
 	display: table-cell;
 	width: 66.39824304538799%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/footer-feedback-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/uFhg8Wp.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -321,7 +315,6 @@ form input {
 .footer__social-button {
 	display: inline-block;
 }
-
 .footer__social-button img:hover {
 	-webkit-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
@@ -364,7 +357,7 @@ form input {
 		-o-text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.44);
 		text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.44);
 
-		background: url(../img/top-bg-mobile.jpg) no-repeat center center;
+		background: url(http://i.imgur.com/MUC1MES.jpg) no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -372,7 +365,7 @@ form input {
 	}
 
 	input[type="button"] {
-		background: url(../img/menu-mobile.png) no-repeat center center;
+		background: url(http://i.imgur.com/8BCA8Sb.png) no-repeat center center;
 	}
 
 	.header__menu {
@@ -389,7 +382,6 @@ form input {
 	.middle,
 	.footer {
 		display: block;
-		width: 100%;
 	}
 	
 	.header__intro,
@@ -398,8 +390,8 @@ form input {
 	.middle__bottom-right,
 	.footer__about,
 	.footer__feedback {
-		display: block;
 		width: 100%;
+		display: block;
 		padding: 1em;
 	}
 	

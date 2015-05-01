@@ -382,7 +382,7 @@ form input {
 	.header,
 	.middle,
 	.footer {
-		display: block
+		display: block;
 	}
 	
 	.header__intro,

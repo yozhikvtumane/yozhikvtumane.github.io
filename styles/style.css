@@ -343,7 +343,9 @@ form input {
 /* Mobile */
 
 @media screen and (max-width: 960px) {
-
+	h2 {
+		font-size: 1.3em;
+	}
 	.header__photo {
 		display: none;
 	}

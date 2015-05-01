@@ -40,7 +40,9 @@ h3 {
 }
 
 input:active,
-input:focus {
+input:focus,
+textarea:active,
+textarea:focus {
 	outline: none;
 }
 

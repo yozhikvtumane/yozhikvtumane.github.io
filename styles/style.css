@@ -113,7 +113,7 @@ input:focus {
 .header__photo {
 	display: table-cell;
 	width: 66.39824304538799%;
-	background: url(../img/top-bg.jpg)no-repeat center center;
+	background: url(http://i.imgur.com/VKlpx3R.jpg)no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -148,14 +148,14 @@ input[type="button"] {
 	border: none;
 	font-size: 2.5em;
 	color: rgba(0, 0, 0, 0);
-	background: url(../img/menu.png) no-repeat center center;
+	background: url(http://i.imgur.com/xb6N4IB.png) no-repeat center center;
 }
 
 .header__menu {
 	display: none;
 	width: 66.39824304538799%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/top-menu-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/llX0kOW.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -200,7 +200,7 @@ input[type="button"] {
 	color: #fff;
 	width: 44.94875549048316%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/middle-left-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/cBZs6DI.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -224,7 +224,7 @@ input[type="button"] {
 
 .middle__top-right {
 	color: #262f32;
-	background: url(../img/middle-right-top-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/HSuw5pI.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -233,7 +233,7 @@ input[type="button"] {
 
 .middle__bottom-right {
 	color: #fff;
-	background: url(../img/middle-right-bottom-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/Avw6HAL.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -254,7 +254,7 @@ input[type="button"] {
 	display: table-cell;
 	width: 33.5285505124451%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/footer-left-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/2fpCXBQ.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -273,7 +273,7 @@ input[type="button"] {
 	display: table-cell;
 	width: 66.39824304538799%;
 	padding: 3em 9em 3em 5em;
-	background: url(../img/footer-feedback-bg.jpg) no-repeat center center;
+	background: url(http://i.imgur.com/uFhg8Wp.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -357,7 +357,7 @@ form input {
 		-o-text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.44);
 		text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.44);
 
-		background: url(../img/top-bg-mobile.jpg) no-repeat center center;
+		background: url(http://i.imgur.com/MUC1MES.jpg) no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -365,7 +365,7 @@ form input {
 	}
 
 	input[type="button"] {
-		background: url(../img/menu-mobile.png) no-repeat center center;
+		background: url(http://i.imgur.com/8BCA8Sb.png) no-repeat center center;
 	}
 
 	.header__menu {

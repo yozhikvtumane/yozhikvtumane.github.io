@@ -106,6 +106,21 @@ textarea:focus {
 	transition: 0.3s;
 }
 
+.overlay-info {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+}
+
+.overlay-info span {
+	display: inline-block;
+	margin: 0 2%;
+	font-size: 1em;
+	cursor: pointer;
+}
+
 /* Header section */
 
 .header {

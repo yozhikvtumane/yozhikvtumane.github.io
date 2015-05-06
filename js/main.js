@@ -9,4 +9,8 @@ $(document).ready(function(){
 			$(".header__menu").removeClass("header__menu_visible");
 		}
 	});
+	
+	$(document).on('click' , '#overlay-info-close' , function(){
+		$(".overlay-info").hide();
+	});
 });

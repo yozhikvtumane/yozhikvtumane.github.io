@@ -79,6 +79,9 @@ textarea:focus {
 	border-radius: 0.5em;
 	text-decoration: none;
 	margin-bottom: 1.5em;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .button-black {
@@ -90,7 +93,6 @@ textarea:focus {
 	color: #fff;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
-	transition: 0.3s;
 }
 
 .button-white {
@@ -101,9 +103,6 @@ textarea:focus {
 .button-white:hover {
 	background: #fff;
 	color: #262f32;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
 }
 
 .overlay-info {

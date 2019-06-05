@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700'); */
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 @import url('https://necolas.github.io/normalize.css/3.0.2/normalize.css');
 
 * {
@@ -8,7 +10,7 @@
 }
 
 html, body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Space Mono', monospace;
 	font-size: 100%;
 	color: #333;
 }

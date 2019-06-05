@@ -1,99 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio | Yozhikvtumane</title>
 	<link rel="stylesheet" href="styles/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400,900' rel='stylesheet' type='text/css'>
-	<script src="js/jquery.js"></script>
-	<script src="js/main.js"></script>
 </head>
-<body>
-	<div class="overlay-info" >
-		<p>&#8592;Не забудьте изменить ширину окна&#8594;<span id="overlay-info-close" title="Закрыть это окно">&#10006;</span></p>
-	</div>
-	<section class="header">
-		<div class="header__photo"></div>
-		<div class="header__menu">
-			<ul>
-				<li><a href="https://yozhikvtumane.github.io/weatherapp/index.html">Weather App</a></li>
-				<li><a href="https://yozhikvtumane.github.io/randomquote/index.html">Random Quote Machine</a></li>
-				<li><a href="http://southparkfans.tk/">University Project</a></li>
-				<li><a href="#">Menu Link</a></li>
-				<li><a href="#">Menu Link</a></li>
-				<li><a href="#">Menu Link</a></li>
-				<li><a href="#">Menu Link</a></li>
-				<li><a href="#">Menu Link</a></li>
-			</ul>
-		</div>
-		<div class="header__intro">
-			<div class="header__intro__menu-button_wrapper">
-				<input type="button" id="menuSwitch" value="a">
-			</div>
-			<h3 class="light">Name Surname’s</h3>
-			<h3 class="bold">Web Page</h3>
-			<h3 class="normal mb">Template</h3>
-			<p class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere esse, voluptatibus quis totam ducimus molestias est, odio perspiciatis magnam nemo iure voluptates vero, expedita ex! Asperiores animi mollitia voluptatem a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, fugit.</p>
-			<p>Voluptatibus dolores quia, dolor cupiditate labore tempore minus veniam eius, ea rem accusamus! Quisquam accusamus, quasi deserunt, odit quia veritatis aspernatur eum similique excepturi. Eaque aperiam beatae exercitationem, dicta consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sunt.</p>
-		</div>
-	</section>
-	<section class="middle">
-		<div class="middle__left">
-			<h2>
-				<span class="light mr">Drawing</span><span class="bold">Scketch</span>
-			</h2>
-			<p class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat magni maxime iusto cupiditate autem adipisci molestias assumenda saepe. Quos, perferendis eveniet iure quam temporibus cupiditate sunt adipisci dolorum totam dolores dolorem eaque voluptas maiores, numquam modi! Sunt incidunt, exercitationem animi!</p>
-			<h2>
-				<span class="light mr">Making</span><span class="bold">Design</span>
-			</h2>
 
-			<p class="mb">In molestiae est cum debitis sit dolore autem possimus tenetur quam? Voluptatem nisi quidem voluptas officia quas maiores. Ipsam, omnis reiciendis dignissimos minima, mollitia earum eveniet repellat architecto modi error atque vel ex amet quas illo aspernatur ipsum delectus voluptates.</p>
-			<h2>
-				<span class="light mr">Developing</span><span class="bold">Product</span>
-			</h2>
-			<p class="mb">Debitis quod, quibusdam aut sapiente sunt perferendis, eligendi iste sit hic pariatur veniam aliquid, maxime laborum. Hic quidem fugiat magni rem ad eum numquam. Fugit qui eius rerum ipsa. Iure minus facere consequatur eius, voluptatem maiores totam ipsum sapiente commodi.</p>
-		</div>
-		<div class="middle__right">
-			<div class="middle__top-right">
-				<h2>
-					<span class="light mr">Best</span><span class="bold">Starting</span>
-				</h2>
-				<p class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat magni maxime iusto cupiditate autem adipisci molestias assumenda saepe. Quos, perferendis eveniet iure quam temporibus cupiditate sunt adipisci dolorum totam dolores dolorem eaque voluptas maiores, numquam modi! Sunt incidunt, exercitationem animi!</p>
-				<a href="#" class="button button-black">View Our History</a>
+<body>
+	<nav id="navbar" class="clearfix">
+		<div class="wrapper">
+			<div class="home-link">
+				<a href="index.html">MyPortfolio</a>
 			</div>
-			<div class="middle__bottom-right">
-				<h2>
-					<span class="light mr">Verified</span><span class="bold">Dummy</span>
-				</h2>
-				<p class="mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat magni maxime iusto cupiditate autem adipisci molestias assumenda saepe. Quos, perferendis eveniet iure quam temporibus cupiditate sunt adipisci dolorum totam dolores dolorem eaque voluptas maiores, numquam modi! Sunt incidunt, exercitationem animi!</p>
-				<a href="#" class="button button-white">Go to the page</a>
+			<div class="menu">
+				<ul>
+					<li><a class="nav-link" href="#welcome-section">Intro</a></li>
+					<li><a class="nav-link" href="#projects">Projects</a></li>
+					<li><a class="nav-link" href="#contact">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="welcome-section">
+		<h1 class="vert-center">This is my portfolio page</h1>
+	</section>
+	<section id="projects">
+		<div class="wrapper">
+			<h2>My projects</h2>
+			<div class="projects-box">
+				<a href="/markdown-previewer/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">Markdwon Previewer</span></a>
+				<a href="/twitch-app/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">Twitch API application</span></a>
+			</div>
+			<div class="projects-box">
+				<a href="/weather-app/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">Weather by location</span></a>
+				<a href="/fcc-form/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">Survey form</span></a>
+				<a href="/randomquote/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">Random quote machine</span></a>
+				<a href="/fcc-techdoc/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">Technical docs</span></a>
+			</div>
+			<div class="projects-box">
+				<a href="/fit-app/index.html" class="project-tile" target="_blank"><img src="img/tile-bg.jpg" alt="Tile bg"><span class="project-tile-text">App Promo Page</span></a>
 			</div>
 		</div>
 	</section>
-	<section class="footer">
-		<div class="footer__about">
-			<h2 class="light">This Webpage Is</h2>
-			<h2 class="bold">Designed By</h2>
-			<img src="http://i.imgur.com/fbOJwY7.png" height="90" width="90" alt="">
-			<h2>Name Surname</h2>
-			<h4 class="light">Web Designer</h4>
-		</div>
-		<div class="footer__feedback">
-			<h2>
-				<span class="light mr">Say</span><span class="bold">`Hello`</span>
-			</h2>
-			<form action="form.php" method="POST">
-				<input type="text" id="name" placeholder="Your name">
-				<input type="text" id="email" placeholder="Your Email">
-				<textarea name="textarea" id="text" rows="10" placeholder="Your Message Here"></textarea>
-			</form>
-			<h4 class="light">Stay connected with us</h4>
-			<a href="" class="footer__social-button"><img src="http://i.imgur.com/6beXRFU.png" height="45" width="45" alt=""></a>
-			<a href="" class="footer__social-button"><img src="http://i.imgur.com/AO1pNyd.png" height="45" width="45" alt=""></a>
-			<a href="" class="footer__social-button"><img src="http://i.imgur.com/ih7K6Mc.png" height="45" width="45" alt=""></a>
-			<h4 class="light">Please Feel Free To Contat With me For Any Kind of Project.</h4>
+	<section id="contact">
+		<div class="wrapper">
+			<h2>Contact me</h2>
+			<div class="icons-row">
+				<div class="icon-wrapper"><a href="https://github.com/yozhikvtumane" target="_blank" class="contact"><img src="img/github-logo.svg" alt=""></a></div>
+				<div class="icon-wrapper"><a href="mailto:toshamatveeev@gmail.com?subject=Hello!" target="_blank" id="profile-link" class="contact"><img src="img/fcc-logo.svg" alt=""></a></div>
+			</div>
+
 		</div>
 	</section>
+	<footer>
+		<div class="wrapper">
+			<span class="copy">My personal portfolio &copy; 2018</span>
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
 </body>
+
 </html>

@@ -4,24 +4,18 @@
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
+body {
 	font-family: 'Space Mono', monospace;
-	font-size: 100%;
+	font-size: 1.25rem;
 	color: #333;
 	background-color: #efefef;
 }
 
 img {
 	max-width: 100%;
-}
-
-.clearfix::after {
-	display: block;
-	content: "";
-	clear: both;
 }
 
 .flex {
@@ -40,65 +34,107 @@ h1,h2,h3,h4,ul,li {
 	margin: 0;
 }
 
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
+#projects, #welcome, #contact {
+    max-width: 60%;
 }
 
-.home-link {
-	display: inline-block;
-	margin: 0.7em auto;
+#welcome {
+    padding: 6em 0 0 3em;
 }
 
-.home-link a {
-	font-size: 2em;
+#projects, #contact {
+    padding-left: 3em;
 }
 
+
+header {
+    display: block;
+    width: 100%;
+    padding-top:  1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    border-bottom: 3px solid #000;
+    transition: 0.2s;
+    position: fixed;
+    z-index: 5;
+    background-color: #efefef;
+}
+
+/* a.dotted {
+    border-bottom: 1px dotted #333;
+    text-decoration: none;
+} */
 #navbar {
-	background-color: #fafafa;
+    background-color: #fafafa;
 	border-bottom: 3px solid #000;
-	 display: block;
-	padding: 1.5em;
-	transition: 0.3s;
+    display: block;
 	font-size: 1.25em;
-	text-align: center;
 	font-weight: bold;
+    transition: 0.3s all;
 }
 
-#navbar ul {
+.navbar ul {
 	list-style-type: none; 
 }
 
-#navbar ul li {
+.navbar ul li {
 	list-style-type: none;
-	margin-bottom: 0.3em;
+    margin-bottom: 0.3em;
+    display: inline;
 }
 
-#navbar a {
+.navbar a {
 	text-decoration: none;
 	color: #333;
 	font-size: 1.25rem;
 }
 
-#navbar a:hover  {
-	color: #4bcaff;
+.navbar a:hover  {
+	color: aqua;
 }
 
-#welcome-section {
-	padding: 7em 2em;
-	text-align: center;
-	color: #fff;
-	/* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
-	text-shadow: 0px 2px 3px #333;
+
+
+.flex-wrapper {
+    display: flex;
 }
 
-#projects {
-	background: #e6e6e6;
+.projects-column {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0.3em; */
 }
+.box {
+    margin: 0 25px 25px 0;
+    border: 3px solid black;
+    position: relative;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+.box::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 3px solid black;
+    z-index: -1;
+    transition: 0.2s all;
+        
+}
+
+.box:hover::after {
+    background-color: aqua;
+  }
 
 #projects h2,
 #contact h2 {
-	padding: 1em 0 0.3em 0;
+    padding: 1em 0 0.3em 0;
+    margin-bottom: 30px;
 	position: relative;
 }
 
@@ -110,70 +146,11 @@ h1,h2,h3,h4,ul,li {
 	bottom: 0;
 	width: 15%;
 	height: 3px;
-	background: #4bcaff;
+	background: aqua;
 }
 
-.projects-box {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 1em;
-}
 
-.project-tile {
-	background: #fff;
-	margin: 1em 0;
-	flex: 1 1 auto;
-	text-align: center;
-	padding: 2em;
-	color: #333;
-	border-radius: 3px;
-	text-decoration: none;
-}
 
-.project-tile:hover {
-	-webkit-box-shadow: 0px 0px 8px #4bcaff;;
-	box-shadow: 0px 0px 8px #4bcaff;;
-}
-
-.project-tile img {
-	display: block;
-	margin: 0 auto;
-	border-radius: 3px;
-}
-
-.project-tile span {
-	display: block;
-	margin: 2em 0;
-	word-break: break-all;
-	font-size: 1.3em;
-}
-
-.icons-row {
-	margin: 7em auto 0 auto;
-	text-align: center;
-}
-
-.icon-wrapper {
-	padding: 2em;
-	margin-right: 0.3em;
-	border-radius: 50%;
-	width: 30%;
-	display: inline-block;
-	background: #6b747a;
-}
-
-.icon-wrapper:hover {
-	background: #333;
-	cursor: pointer;
-}
-
-.icons-row {
-	margin: 2em auto 2em auto;
-}
 
 footer {
 	background: #353f47;
@@ -183,7 +160,7 @@ footer {
 	text-shadow: 0px 2px 3px #333;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
 
 	.wrapper {
 		width: 70%;
@@ -211,12 +188,6 @@ footer {
 		text-shadow: 0px 2px 3px #333;
 	}
 
-	.menu {
-		width: 70%;
-		float: right;
-		text-align: right;
-	}
-
 	#navbar ul li {
 		margin: 0 0.5em 0 0;
 		display: inline-block;
@@ -233,13 +204,6 @@ footer {
 		position: relative;
 	}
 
-	.vert-center {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
 
 	#projects,
 	#contact {
@@ -271,9 +235,5 @@ footer {
 		width: 4%;
 	}
 
-	.icons-row {
-		margin: 7em auto 0 auto;
-		text-align: center;
-	}
-}
+} */
 

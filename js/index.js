@@ -1,12 +1,27 @@
 const header = document.querySelector('header')
-const moreButton = document.querySelector('.more-button')
+const moreButtons = document.querySelectorAll('.more-button')
 const copy = document.querySelector('.copy')
+const email = document.querySelector('.email')
+const phone = document.querySelector('.phone')
 
 const moreText = {
-    paragr: 'twest 123 asd asd asd'
+    twitchApp: " this app makes several API calls using fetch to display what's needed. If you don't have Twitch username you can just copy-paste any username from the list to test it.",
+    markdown: " plain text with all styles applied. Built with the help of Marked.js library.",
+    weather: " REST API. This app doesn't store your location data, so don't worry about the privacy.",
 }
 
-console.dir(moreButton)
+function showMoreText() {
+    const contextEl = this.parentNode
+    const text = contextEl.textContent.split("more")[0] + moreText[contextEl.dataset.expand]
+    contextEl.textContent = text
+    this.hidden = true
+
+}
+
+function showPhoneNumber() {
+    this.textContent = '+420 773 543 914'
+    this.classList.remove('dotted')
+}
 
 window.addEventListener('scroll', ()=>{
     if (window.scrollY > 60) {
@@ -18,28 +33,10 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
-function showMoreText(e) {
-    e.preventDefault()
-    const paragr = this.previousElementSibling
-    paragr.classList.add('visible')
-
-    console.dir(paragr)
-     
-    // let text = this.previousElementSibling.textContent + " " + moreText.paragr
-    paragr.textContent = this.previousElementSibling.textContent + " " + moreText.paragr
-    // console.log(paragr.textContent)
-    // console.log(paragr.textContent)
-    
-    // this.previousElementSibling.childNodes[0].data = text
-    // console.log(this.parentNode.offsetWidth)
-    // this.hidden = true
-    // console.log(this.parentNode.offsetWidth)
-    // this.parentNode.textContent
-    // console.log(this.parentNode.textContent)
-}
-
-moreButton.addEventListener('click' , showMoreText)
+Array.from(moreButtons).map(button => button.addEventListener('click' , showMoreText))
+phone.addEventListener('click', showPhoneNumber)
+// phone.addEventListener('click', showPhoneNumber)
 
 let y = new Date().getFullYear()
-copy.textContent = 'My personal portfolio | ' + y
+copy.textContent = ' |' + y
 

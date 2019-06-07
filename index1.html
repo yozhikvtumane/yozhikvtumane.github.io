@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<!-- • add projects description -->
-
+<!-- ◘ add projects description -->
+<!-- ◘ add links pseudo class styling -->
+<!-- ◘ add intro -->
+<!-- ◘ add media queries -->
+<!-- • add contacts -->
+<!-- • add source to footer -->
+<!-- ◘ header hover links styling -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -13,98 +18,92 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a class="nav-link" href="#welcome">Intro</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#contact">Contacts</a></li>
+                <li><a href="#welcome">Intro</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main id="welcome">
-        <h1 class="welcome-header">This is my portfolio page</h1>
-        <p class="welcome-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim repellat magni ipsa quam magnam recusandae est amet quaerat quia, vel atque voluptatem odit dolorem tempora ullam rem cum nisi? Odit.</p>
+        <h1 class="welcome-header">Hello! My name is Anton!</h1>
+        <p class="welcome-text">
+            I am an aspiring web-development student currently working on projects involving JavaScript, HTML, CSS. This page contains some of my work. I enjoy coding and the process of creating something beautiful and useful with written words. As someone who takes responsibility for my own personal development, I'm constantly evaluating and advancing my skills.
     </main>
 	<section id="projects">
-        <h2>👁Things I made that live on the Internet</h2>
+        <h2>Things I made that live on the Internet</h2>
         <div class="flex-wrapper">
             <div class="projects-column">
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="/markdown-previewer/index.html" class="dotted">Markdwon Previewer</a>
+                        <a href="/markdown-previewer/index.html" target="_blank" class="dotted">Markdown Previewer</a>
                     </h3>
                     <h4>Stack: JavaScript (ES6, Marked.js), HTML, CSS</h4>
-                    <p class="project-description">This is a project in which you type or paste your markdown styled text and it will be automatically convertet to plain text with all styles applied. Built with the help of Marked.js library. </p>
-                    <!-- <a href="">more &#x25BC;</a> -->
+                    <p class="project-description" data-expand="markdown">This is a project in which you type or paste your markdown styled text and it will be automatically converted to <span class="more-button">more &#x25BC;</span></p>
                 </div>
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="/twitch-app/index.html">Twitch API application</a>
+                        <a href="/weather-app/index.html" target="_blank" class="dotted">Weather by location</a>
+                    </h3>
+                    <h4>Stack: JS (ES6), HTML, CSS</h4>
+                    <p class="project-description" data-expand="weather">Allow this app to use your location and it will show your local weather, fetching data from OpenWeatherMap <span class="more-button">more &#x25BC;</span></p>
+                    
+                </div>
+                <div class="project-box box">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
+                    <h3>
+                        <a href="/fcc-techdoc/index.html" target="_blank" class="dotted">Technical documentation</a>
                     </h3>
                     <h4>Stack: JavaScript (ES6), HTML, CSS</h4>
-                    <p class="project-description">Using fetch Twitch REST API . Interesting thing, that mentioned API doesn't provide online channel statuses directly, so this app makes several API calls using fetch to display what's needed.</p>
-                </div>
-                <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
-                    <h3>
-                        <a href="/weather-app/index.html">Weather by location</a>
-                    </h3>
-                    <h4>Stack: JS/HTML/CSS</h4>
-                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, hic. Illum laboriosam impedit non exercitationem. Minus aperiam sint officiis cum culpa, nulla ipsum qui fuga error enim, accusantium ullam totam. <a href="">more...</a></p>
+                    <p class="project-description">Two column template for documentation page.</p>
                 </div>
             </div>
             <div class="projects-column">
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="">Link ci 2 1</a>
+                        <a href="/twitch-app/index.html" target="_blank" class="dotted">Twitch API application</a>
                     </h3>
-                    <h4>Stack: JS/HTML/CSS</h4>
-                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, hic. Illum laboriosam impedit non exercitationem. Minus aperiam sint officiis cum culpa, nulla ipsum qui fuga error enim, accusantium ullam totam.</p>
-                    <span class="more-button">more...</span>
-                    <!-- totam. <a href="" class="more-button">more...</a></p> -->
+                    <h4>Stack: JavaScript (ES6), HTML, CSS</h4>
+                    <p class="project-description" data-expand="twitchApp">Using fetch this app receives data from Twitch REST API . Unfirtunately mentioned API doesn't provide online channel statuses directly, so 
+                    <span class="more-button">more &#x25BC;</span>
+                    </p>
+                    
                 </div>
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="">Link ci 2 2</a>
+                        <a href="/fit-app/index.html" target="_blank" class="dotted">App Promo Page</a>
                     </h3>
-                    <h4>Stack: JS/HTML/CSS</h4>
-                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, hic. Illum laboriosam impedit non exercitationem. Minus aperiam sint officiis cum culpa, nulla ipsum qui fuga error enim, accusantium ullam totam. <a href="">more...</a></p>
-                </div>
-                <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
-                    <h3>
-                        <a href="/fcc-form/index.html">Survey Form</a>
-                    </h3>
-                    <h4>Stack: Javascript (ES6), HTML, CSS</h4>
-                    <p class="project-description">Simple form to practice elements alingment, </p>
+                    <h4>Stack: JavaScript (ES6), HTML, CSS</h4>
+                    <p class="project-description">Responsive promo page for the calorie tracking application.</p>
                 </div>
             </div>
             <div class="projects-column">
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="/random-quote-react/index.html">Random Quote Generator</a>
+                        <a href="/random-quote-react/index.html" target="_blank" class="dotted">Random Quote Generator</a>
                     </h3>
                     <h4>Stack: JavaScript (ES6, React, JSX), HTML, CSS</h4>
                     <p class="project-description">React app, which uses props, state and also fetches data from online source.</p>
                 </div>
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="">Link ci 3 2</a>
+                        <a href="/scether/index.html" target="_blank" class="dotted">Sket4er - Draw on Canvas</a>
                     </h3>
-                    <h4>Stack: JS/HTML/CSS</h4>
-                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, hic. Illum laboriosam impedit non exercitationem. Minus aperiam sint officiis cum culpa, nulla ipsum qui fuga error enim, accusantium ullam totam. <a href="">more...</a></p>
+                    <h4>Stack: JS (ES6), HTML, CSS</h4>
+                    <p class="project-description">Draw on HTML canvas with your mouse.</p>
                 </div>
                 <div class="project-box box">
-                    <img src="./img/tile-bg.jpg" alt="">
+                    <img src="./img/tile-bg.jpg" alt="aliens stole this img :(">
                     <h3>
-                        <a href="">Link ci 3 3</a>
+                        <a href="/fcc-form/index.html" target="_blank" class="dotted">Survey Form</a>
                     </h3>
-                    <h4>Stack: JS/HTML/CSS</h4>
-                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, hic. Illum laboriosam impedit non exercitationem. Minus aperiam sint officiis cum culpa, nulla ipsum qui fuga error enim, accusantium ullam totam. <a href="">more...</a></p>
+                    <h4>Stack: JavaScript (ES6), HTML, CSS</h4>
+                    <p class="project-description">Survey form.</p>
                 </div>
                 <!-- +scetcher -->
                 <!-- +scetcher -->
@@ -115,13 +114,13 @@
         </div>
 	</section>
 	<section id="contact">
-		<div class="wrapper">
-			<h2>Contact me</h2>
-		</div>
+        <h2>Contact me</h2>
+        <h3>By e-mail: <a href="mailto:toshamatveeev@gmail.com" class="dotted">toshamatveeev@gmail.com</a></h3>
+        <h3>By phone : <span class="dotted phone">Show me the number</span></h3>
 	</section>
 	<footer>
 		<div class="wrapper">
-			<span class="copy">My personal portfolio &copy; 2018</span>
+			<a href="https://github.com/yozhikvtumane" target="_blank">Yozhikvtumane </a><span class="copy">2018</span>
 		</div>
 	</footer>
 	<script src="js/index.js"></script>

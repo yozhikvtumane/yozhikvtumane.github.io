@@ -36,7 +36,8 @@ window.addEventListener('scroll', ()=>{
 Array.from(moreButtons).map(button => button.addEventListener('click' , showMoreText))
 phone.addEventListener('click', showPhoneNumber)
 // phone.addEventListener('click', showPhoneNumber)
+// window.
 
 let y = new Date().getFullYear()
-copy.textContent = ' |' + y
+copy.textContent = ` |${y}`
 

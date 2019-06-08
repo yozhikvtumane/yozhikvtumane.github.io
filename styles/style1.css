@@ -182,6 +182,10 @@ footer .wrapper {
 	align-items: center;
 }
 
+.copy {
+	margin-bottom: 3px;
+}
+
 @media all and (max-width: 1300px) {
 	#projects, #welcome, #contact {
 		width: 80%;

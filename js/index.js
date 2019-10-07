@@ -2,7 +2,6 @@ const header = document.querySelector('header')
 const moreButtons = document.querySelectorAll('.more-button')
 const copy = document.querySelector('.copy')
 const email = document.querySelector('.email')
-const phone = document.querySelector('.phone')
 
 const moreText = {
     drumMachineReact: " nents made both with keyboard events and click events. Different modes can be used.",
@@ -19,11 +18,6 @@ function showMoreText() {
 
 }
 
-function showPhoneNumber() {
-    this.textContent = '+420 773 543 914'
-    this.classList.remove('dotted')
-}
-
 window.addEventListener('scroll', ()=>{
     if (window.scrollY > 60) {
         header.style.paddingTop = '0.5em'
@@ -35,8 +29,6 @@ window.addEventListener('scroll', ()=>{
 })
 
 Array.from(moreButtons).map(button => button.addEventListener('click' , showMoreText))
-phone.addEventListener('click', showPhoneNumber)
-
 
 let y = new Date().getFullYear()
 copy.textContent = ` |${y}`

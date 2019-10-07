@@ -7,7 +7,6 @@ const moreText = {
     drumMachineReact: " nents made both with keyboard events and click events. Different modes can be used.",
     twitchApp: " this app makes several API calls using fetch to display what's needed. If you don't have Twitch username you can just copy-paste any username from the list to test it.",
     markdown: " plain text with all styles applied. Built with the help of Marked.js library.",
-    weather: " REST API. This app doesn't store your location data, so don't worry about the privacy.",
 }
 
 function showMoreText() {
